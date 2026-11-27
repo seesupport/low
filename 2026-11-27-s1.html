@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كلية الحقوق - جامعة الإسكندرية | تفاصيل المقررات</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts - Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --primary-dark: #0f2438;
+      --primary-light: #2d5a8a;
+      --accent: #c9a227;
+      --accent-light: #f0d060;
+      --bg-light: #f4f6f9;
+      --text-dark: #1e2a38;
+      --text-muted: #6c7a8a;
+    }
+
+    * {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar-custom {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+      padding: 0.7rem 0;
+    }
+    .navbar-custom .navbar-brand {
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+    .navbar-custom .navbar-brand i {
+      color: var(--accent);
+      margin-left: 0.5rem;
+    }
+    .navbar-custom .nav-link {
+      color: rgba(255,255,255,0.85);
+      font-weight: 600;
+      padding: 0.5rem 1rem !important;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+    }
+    .navbar-toggler {
+      border-color: rgba(255,255,255,0.3);
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '\f0e3';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      font-size: 20rem;
+      opacity: 0.04;
+      left: -3rem;
+      bottom: -4rem;
+      transform: rotate(-15deg);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: var(--bg-light);
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+    .hero h1 {
+      font-weight: 900;
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
+    .hero .lead {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero .badge-univ {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+    .hero .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .hero .hero-stats .stat {
+      text-align: center;
+    }
+    .hero .hero-stats .stat .num {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      display: block;
+      line-height: 1.2;
+    }
+    .hero .hero-stats .stat .label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* ===== Section Titles ===== */
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-title h2 {
+      font-weight: 800;
+      font-size: 2rem;
+      color: var(--primary);
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.6rem;
+    }
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      border-radius: 4px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+      font-size: 1rem;
+    }
+
+    /* ===== Division Cards ===== */
+    .division-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(26,58,92,0.08);
+      transition: all 0.35s ease;
+      border: 1px solid rgba(26,58,92,0.06);
+      overflow: hidden;
+      height: 100%;
+    }
+    .division-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 35px rgba(26,58,92,0.15);
+    }
+    .division-card .card-header-custom {
+      padding: 1.2rem 1.5rem;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .division-card .card-header-custom .icon-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    .division-card .card-body-custom {
+      padding: 1.3rem 1.5rem;
+    }
+    .division-card .card-body-custom ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .division-card .card-body-custom ul li {
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #e8ecf1;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      line-height: 1.6;
+    }
+    .division-card .card-body-custom ul li:last-child {
+      border-bottom: none;
+    }
+    .division-card .card-body-custom ul li i {
+      color: var(--accent);
+      margin-top: 4px;
+      font-size: 0.8rem;
+    }
+    .bg-div1 { background: linear-gradient(135deg, #1a3a5c, #2d5a8a); }
+    .bg-div2 { background: linear-gradient(135deg, #6b2737, #9e3a4f); }
+    .bg-div3 { background: linear-gradient(135deg, #1f5c3a, #2d7a4f); }
+    .bg-div4 { background: linear-gradient(135deg, #5c3a1a, #8a5a2d); }
+
+    /* ===== Accordion Custom ===== */
+    .accordion-custom .accordion-item {
+      border: 1px solid rgba(26,58,92,0.1);
+      border-radius: 12px !important;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(26,58,92,0.05);
+    }
+    .accordion-custom .accordion-button {
+      background: #fff;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1rem;
+      padding: 1rem 1.3rem;
+      border-radius: 12px !important;
+      box-shadow: none !important;
+    }
+    .accordion-custom .accordion-button:not(.collapsed) {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: #fff;
+    }
+    .accordion-custom .accordion-button::after {
+      filter: brightness(0) saturate(100%) invert(18%) sepia(30%) saturate(2000%) hue-rotate(190deg);
+    }
+    .accordion-custom .accordion-button:not(.collapsed)::after {
+      filter: brightness(0) invert(1);
+    }
+    .accordion-custom .accordion-body {
+      padding: 1.3rem 1.5rem;
+      background: #fff;
+      line-height: 1.9;
+      font-size: 0.95rem;
+      color: #2c3e50;
+    }
+    .accordion-custom .accordion-body h6 {
+      color: var(--primary);
+      font-weight: 800;
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
+      padding-right: 0.8rem;
+      border-right: 4px solid var(--accent);
+    }
+    .accordion-custom .accordion-body ul {
+      padding-right: 1.2rem;
+    }
+    .accordion-custom .accordion-body ul li {
+      margin-bottom: 0.4rem;
+    }
+    .highlight-box {
+      background: #f0f6ff;
+      border-right: 4px solid var(--primary-light);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      margin: 0.8rem 0;
+      font-weight: 600;
+    }
+    .warn-box {
+      background: #fff8e6;
+      border-right: 4px solid var(--accent);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      margin: 0.8rem 0;
+    }
+
+    /* ===== Video Cards ===== */
+    .video-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 2px 10px rgba(26,58,92,0.07);
+      transition: all 0.3s;
+      border: 1px solid rgba(26,58,92,0.06);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: var(--text-dark);
+    }
+    .video-card:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateX(-4px);
+    }
+    .video-card:hover .video-icon {
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+    .video-card .video-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #f0f6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--primary);
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    .video-card .video-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* ===== Schedule Timeline ===== */
+    .timeline {
+      position: relative;
+      padding-right: 2.5rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      right: 0.9rem;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary), var(--accent));
+      border-radius: 3px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.1rem 1.4rem;
+      box-shadow: 0 2px 10px rgba(26,58,92,0.07);
+      border: 1px solid rgba(26,58,92,0.06);
+      transition: all 0.3s;
+    }
+    .timeline-item:hover {
+      transform: translateX(-4px);
+      box-shadow: 0 6px 18px rgba(26,58,92,0.12);
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      right: -2.15rem;
+      top: 1.3rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px var(--accent);
+    }
+    .timeline-item .tl-subject {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1.05rem;
+    }
+    .timeline-item .tl-date {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-top: 0.2rem;
+    }
+    .timeline-item .tl-gap {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.82rem;
+      background: #fff8e6;
+      color: #8a6d0b;
+      padding: 0.25rem 0.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+
+    /* ===== Notes Card ===== */
+    .note-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 18px rgba(26,58,92,0.08);
+      border: 1px solid rgba(26,58,92,0.06);
+      height: 100%;
+    }
+    .note-card h5 {
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid #eef1f5;
+    }
+    .note-card h5 i {
+      color: var(--accent);
+      margin-left: 0.4rem;
+    }
+    .note-card ul {
+      padding-right: 1.2rem;
+      margin-bottom: 0;
+    }
+    .note-card ul li {
+      margin-bottom: 0.5rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .tag-required {
+      display: inline-block;
+      background: #e6f7ee;
+      color: #1f7a4a;
+      padding: 0.15rem 0.6rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 0.3rem;
+    }
+    .tag-deleted {
+      display: inline-block;
+      background: #fdeaea;
+      color: #b02a2a;
+      padding: 0.15rem 0.6rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 0.3rem;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.7);
+      padding: 3rem 0 1.5rem;
+    }
+    .footer h5 {
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+    }
+    .footer a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer a:hover {
+      color: var(--accent);
+    }
+    .footer .social a {
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      align-items: center;
+      justify-content: center;
+      margin-left: 0.5rem;
+      transition: all 0.3s;
+    }
+    .footer .social a:hover {
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+    .footer .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* ===== Back to top ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      font-size: 1.2rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(26,58,92,0.3);
+      z-index: 999;
+      transition: all 0.3s;
+    }
+    .back-to-top:hover {
+      background: var(--accent);
+      color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    /* ===== Animations ===== */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero { padding: 3.5rem 0 3rem; }
+      .hero .hero-stats { gap: 1.5rem; }
+      .hero .hero-stats .stat .num { font-size: 1.5rem; }
+      .section-title h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fa-solid fa-scale-balanced"></i> كلية الحقوق
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#divisions">الشعب</a></li>
+          <li class="nav-item"><a class="nav-link" href="#criminal">القانون الجنائي</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notes">الملغي والمقرر</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">جدول الامتحانات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">الفيديوهات</a></li>
+        </ul>
+        <span class="navbar-text text-white-50 small d-none d-lg-inline">
+          <i class="fa-solid fa-graduation-cap me-1"></i> جامعة الإسكندرية
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero text-center" id="home">
+    <div class="container position-relative" style="z-index:2;">
+      <span class="badge-univ"><i class="fa-solid fa-landmark me-1"></i> نظام جامعة الإسكندرية / عين شمس</span>
+      <h1>تفاصيل كلية الحقوق</h1>
+      <p class="lead">مواد الترم الثاني، ملخصات القانون الجنائي، الملغي والمقرر، جدول الامتحانات، وروابط الفيديوهات التعليمية — كل ما تحتاجه في مكان واحد.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="num">4</span>
+          <span class="label">شعب دراسية</span>
+        </div>
+        <div class="stat">
+          <span class="num">18</span>
+          <span class="label">مادة دراسية</span>
+        </div>
+        <div class="stat">
+          <span class="num">50+</span>
+          <span class="label">فيديو تعليمي</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== DIVISIONS ===== -->
+  <section class="py-5" id="divisions">
+    <div class="container">
+      <div class="section-title fade-in-up">
+        <h2>مواد الترم الثاني</h2>
+        <p>الشعب الأربعة لنظام جامعة الإسكندرية</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Division 1 -->
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="division-card">
+            <div class="card-header-custom bg-div1">
+              <span class="icon-circle"><i class="fa-solid fa-1"></i></span>
+              الشعبة الأولى
+            </div>
+            <div class="card-body-custom">
+              <ul>
+                <li><i class="fa-solid fa-circle"></i> النظم السياسية والقانون الدستوري</li>
+                <li><i class="fa-solid fa-circle"></i> المدخل لدراسة الفقه الإسلامي</li>
+                <li><i class="fa-solid fa-circle"></i> الاقتصاد</li>
+                <li><i class="fa-solid fa-circle"></i> اللغة الأجنبية ومصطلحاتها القانونية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Division 2 -->
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="division-card">
+            <div class="card-header-custom bg-div2">
+              <span class="icon-circle"><i class="fa-solid fa-2"></i></span>
+              الشعبة الثانية
+            </div>
+            <div class="card-body-custom">
+              <ul>
+                <li><i class="fa-solid fa-circle"></i> القانون الجنائي</li>
+                <li><i class="fa-solid fa-circle"></i> أحكام الإلتزام والإثبات</li>
+                <li><i class="fa-solid fa-circle"></i> تاريخ القانون المصري</li>
+                <li><i class="fa-solid fa-circle"></i> القانون الدولي العام</li>
+                <li><i class="fa-solid fa-circle"></i> اللغة الأجنبية ومصطلحاتها</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Division 3 -->
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="division-card">
+            <div class="card-header-custom bg-div3">
+              <span class="icon-circle"><i class="fa-solid fa-3"></i></span>
+              الشعبة الثالثة
+            </div>
+            <div class="card-body-custom">
+              <ul>
+                <li><i class="fa-solid fa-circle"></i> المالية والتشريع الضريبي</li>
+                <li><i class="fa-solid fa-circle"></i> القضاء الإداري</li>
+                <li><i class="fa-solid fa-circle"></i> قانون المرافعات</li>
+                <li><i class="fa-solid fa-circle"></i> الشريعة الإسلامية</li>
+                <li><i class="fa-solid fa-circle"></i> قانون الجنسية ومركز الأجانب</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Division 4 -->
+        <div class="col-md-6 col-lg-3 fade-in-up">
+          <div class="division-card">
+            <div class="card-header-custom bg-div4">
+              <span class="icon-circle"><i class="fa-solid fa-4"></i></span>
+              الشعبة الرابعة
+            </div>
+            <div class="card-body-custom">
+              <ul>
+                <li><i class="fa-solid fa-circle"></i> الحقوق العينية الأصلية / القانون الزراعي <span class="text-muted small">(نظام قديم)</span></li>
+                <li><i class="fa-solid fa-circle"></i> التأمينات العينية والشخصية / القانون المدني <span class="text-muted small">(نظام قديم)</span></li>
+                <li><i class="fa-solid fa-circle"></i> الإجراءات الجنائية</li>
+                <li><i class="fa-solid fa-circle"></i> القانون التجاري</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRIMINAL LAW ===== -->
+  <section class="py-5" id="criminal" style="background:#fff;">
+    <div class="container">
+      <div class="section-title fade-in-up">
+        <h2><i class="fa-solid fa-gavel me-2" style="color:var(--accent);"></i> كلية وأكاديمية — القانون الجنائي</h2>
+        <p>ملخص شامل لمقرر القانون الجنائي (الجزء العام)</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion accordion-custom" id="criminalAccordion">
+
+            <!-- 1 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true">
+                  <i class="fa-solid fa-book me-2"></i> 1. تعريف القانون الجنائي وأقسامه
+                </button>
+              </h2>
+              <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <div class="highlight-box">
+                    <i class="fa-solid fa-quote-right ms-1" style="color:var(--accent);"></i>
+                    هو فرع من فروع النظام القانوني الداخلي يضم مجموعة من القواعد القانونية التي تنظم:
+                  </div>
+                  <ul>
+                    <li><strong>شقها الموضوعي:</strong> ينظم حق الدولة في تجريم الأفعال وعقاب الجناة.</li>
+                    <li><strong>شقها الإجرائي:</strong> ينظم طرق ملاحقة الجناة وكيفية أخذ حق الدولة منهم وطرق معاقبتهم.</li>
+                  </ul>
+                  <h6>القانون الجنائي يطلق أيضاً على قانون العقوبات</h6>
+                  <p>يشمل قانون العقوبات مجموعة القواعد القانونية التي تحدد: الأفعال المجرمة، والجزاءات الجنائية على تلك الأفعال.</p>
+                  <h6>تنقسم قواعد قانون العقوبات إلى:</h6>
+                  <ul>
+                    <li><strong>القواعد العامة:</strong> هي القواعد التي تحكم الجريمة والمسؤولية والجزاء، أي أنها القواعد التي تسري بصفة عامة على كل أنواع الجرائم والعقوبات (القسم العام من قانون العقوبات) أو (النظرية العامة للقانون الجنائي).</li>
+                    <li><strong>القواعد الخاصة:</strong> القواعد التي تخص كل جريمة منفصلة عن الأخرى فتتناول: الاسم القانوني للجريمة، أركانها، العقوبة، الظروف المخففة أو المشددة للعقوبة في تلك الجريمة (القسم الخاص لقانون العقوبات).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+                  <i class="fa-solid fa-scale-balanced me-2"></i> 2. القانون الجنائي وقانون الإجراءات الجنائية
+                </button>
+              </h2>
+              <div id="c2" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>القانون الجنائي بمعناه الواسع:</strong> يشمل القواعد المحددة للجرائم والعقوبات عاماً وخاصاً، وأيضاً يشمل الإجراءات الجنائية التي تنظم حق الدولة في العقاب.</li>
+                    <li><strong>القانون الجنائي بمعناه الضيق:</strong> يتحدد فقط في الإجراءات الجنائية.</li>
+                  </ul>
+                  <div class="highlight-box">
+                    <strong>القانون الجنائي الموضوعي</strong> = قانون العقوبات.<br>
+                    <strong>القانون الجنائي الإجرائي</strong> = قانون الإجراءات الجنائية.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
+                  <i class="fa-solid fa-globe me-2"></i> 3. القانون الجنائي الداخلي والدولي
+                </button>
+              </h2>
+              <div id="c3" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>القانون الجنائي الداخلي:</strong> يطبق على حدود الإقليم ولا يطبق خارجها إلا في استثناءات معينة.</li>
+                    <li><strong>القانون الجنائي الدولي:</strong> ينظم العلاقات بين الدول في المسائل الجنائية.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
+                  <i class="fa-solid fa-shield-halved me-2"></i> 4. خصائص القاعدة الجنائية
+                </button>
+              </h2>
+              <div id="c4" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <h6>أ) قاعدة آمرة</h6>
+                  <p>القاعدة الجنائية تنتمي إلى قواعد القانون العام لأن العلاقة تكون بين الدولة وبين من يخالف حكم القاعدة الجنائية.</p>
+
+                  <h6>ب) هدف القاعدة الجنائية حماية المصالح الجوهرية للمجتمع</h6>
+                  <ul>
+                    <li>يحمي القانون الجنائي المصالح الجوهرية للمجتمع بالتجريم والعقاب.</li>
+                    <li><strong>مصالح جوهرية جديرة بالحماية لذاتها:</strong> الحق في الحياة / الحق في سلامة البدن / الحق في العرض / الحق في الشرف والاعتبار / الحق في الملكية / الحق في الحرية.</li>
+                    <li><strong>مصالح جوهرية جديرة بالحماية لظروف وطنية زمانية ومكانية:</strong> تجريم العدوان على الدولة / التهرب الضريبي / إصدار شيك بدون رصيد.</li>
+                    <li>المشرع الجنائي لا يتدخل لحماية مصالح فردية إلا إذا كانت لها أهمية اجتماعية كبيرة. وبالتالي حتى لو تنازل المجني عليه عن دعوته فالنيابة العامة تستطيع استئنافها أمام القضاء لأن النيابة العامة تمثل الدولة وبالتالي هي المختصة باستعمال الدعوى الجنائية دون المجني عليه.</li>
+                    <li>المشرع لا يجرم فقط العدوان بل أيضاً يجرم مجرد التهديد بالعدوان.</li>
+                  </ul>
+
+                  <h6>ج) القاعدة الجنائية تتضمن جزاء ذا جسامة خاصة</h6>
+                  <ul>
+                    <li>تتميز القاعدة الجنائية بوجود عقوبات مغلظة تمس الحق في الحياة مثل الإعدام والعقوبات السالبة للحرية.</li>
+                    <li>يوجد جرائم بسيطة مثل مخالفات يكون العقاب فيها غرامة وهي أقل الجزاءات الجنائية.</li>
+                  </ul>
+
+                  <h6>د) ذاتية القاعدة الجنائية</h6>
+                  <ul>
+                    <li>تحمي حقوقاً لا ينظمها أي فرع من فروع القانون مثل الحق في الحياة وسلامة البدن.</li>
+                    <li>بها مصطلحات تنفرد بمعناها (موظف عام لها معنى مختلف عن معناه في القانون الإداري).</li>
+                    <li>نطاق الحماية يختلف عن الحماية التي تشملها القاعدة غير الجنائية؛ فالقانون التجاري يحمي الشيك والكمبيالة والسند الأذني أما القانون الجنائي يحمي الشيك فقط.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5">
+                  <i class="fa-solid fa-hourglass-half me-2"></i> 5. سقوط العقوبة الجنائية
+                </button>
+              </h2>
+              <div id="c5" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>تسقط العقوبة في الجنايات بمرور <strong>20 عاماً</strong>.</li>
+                    <li>تسقط العقوبة في الجنايات المحكوم بها بالإعدام بمرور <strong>30 عاماً</strong>.</li>
+                    <li>تسقط العقوبة في الجنح بمرور <strong>5 أعوام</strong>.</li>
+                    <li>تسقط العقوبة في المخالفات بمرور <strong>عامين</strong>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6">
+                  <i class="fa-solid fa-rotate-right me-2"></i> 6. رد الاعتبار
+                </button>
+              </h2>
+              <div id="c6" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>يسري رد الاعتبار على الجنايات والجنح فقط.</li>
+                  </ul>
+                  <div class="warn-box">
+                    <strong>ما هو المعيار الذي تحدد به نوع الجريمة؟</strong> هل العبرة بالعقوبة المنصوص عليها قانوناً أم العقوبة التي حكم بها القاضي؟ لأن قد تكون جناية وتأخذ عقوبة جنحة (قتل الزوج لزوجته الزانية) وقد تكون جنحة وتأخذ عقوبة جناية (السرقة بالسلاح).
+                  </div>
+
+                  <h6>1) حالة الحكم بعقوبة أخف مما يقرره القانون</h6>
+                  <p>هناك اختلاف فقهي:</p>
+                  <ul>
+                    <li><strong>الرأي الأول:</strong> الجريمة تظل جناية حتى لو حكم القاضي بها بعقوبة جنحة، سواء كان التخفيف لعذر قانوني أو ظرف قضائي مخفض.</li>
+                    <li><strong>الرأي الثاني:</strong> التفرقة بين التخفيف للعقوبة في حالة العذر القانوني والظرف القضائي المنصوص عليه في المادة 17.</li>
+                  </ul>
+                  <p><strong>التخفيف لعذر قانوني:</strong> يتحول وصف الجريمة من جناية إلى جنحة لأن العذر القانوني واجب التطبيق طالما توافرت شروطه وليس للقاضي أي سلطة في ذلك، والأعذار مثل (صغر السن، تلبس الزوجة بالزنا).</p>
+                  <p><strong>التخفيف لظرف قضائي:</strong> أي التخفيف طبقاً لنص المادة 17 فالجناية ستظل جناية حتى لو طبق فيها عقوبة الجنح، لأن تلك المادة لا تلزم القاضي بتخفيف عقوبة الجناية ولكنها تمنحه سلطة تقديرية في التخفيف. فالقاضي له الاختيار بين عقوبتين الجريمة وهنا العبرة في تحديد نوع الجريمة تكون بالعقوبة الأشد بينهما (الرأي الراجح).</p>
+
+                  <h6>2) حالة الحكم بعقوبة أشد مما يقرره القانون</h6>
+                  <p>الظروف المشددة للعقاب هي نوعان:</p>
+                  <ul>
+                    <li><strong>ظروف وجوبية:</strong> (الإكراه في السرقة).</li>
+                    <li><strong>ظروف جوازية:</strong> (العود يعني رجوع المجرم لارتكاب الجرائم بعد عقوبته مرة أخرى).</li>
+                  </ul>
+                  <ul>
+                    <li>إذا شدد القاضي العقوبة لوجود ظرف وجوبي تتحول في تلك الحالة من جنحة إلى جناية.</li>
+                    <li>إذا شدد القاضي العقوبة لوجود ظرف جوازي فسيكون تحديد نوع الجريمة بالعقوبة الأشد التي سيختارها القاضي من بين العقوبتين.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7">
+                  <i class="fa-solid fa-cube me-2"></i> 7. الركن المادي للجريمة
+                </button>
+              </h2>
+              <div id="c7" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <p>هو الواقعة المادية التي يحقق ارتكابها عدواناً على مصلحة يحميها القانون.</p>
+
+                  <h6>الركن المادي في الجريمة التامة — له صورتين:</h6>
+                  <ul>
+                    <li><strong>صورة السلوك المجرد:</strong> يكون السلوك وحده محققاً للمساس بالمصلحة محل الحماية الجنائية، وهذا ما يسمى (جرائم السلوك المجرد) أو (جرائم السلوك المحض).</li>
+                    <li><strong>صورة السلوك المحقق للنتيجة:</strong> لابد أن ينتج عن السلوك نتيجة معينة، فإذا بدأ الجاني ارتكاب السلوك ولم ينتهِ منه، أو انتهى من ارتكاب السلوك ولم تتحقق النتيجة لسبب خارج عن إرادته (لم يكتمل الركن المادي)، ولكنه توقف عند الشروع في الجريمة.</li>
+                  </ul>
+
+                  <h6>عناصر الركن المادي:</h6>
+                  <ul>
+                    <li>سلوك</li>
+                    <li>نتيجة</li>
+                    <li>علاقة سببية</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="accordion-item fade-in-up">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8">
+                  <i class="fa-solid fa-person-walking me-2"></i> 8. السلوك (إيجابي / سلبي)
+                </button>
+              </h2>
+              <div id="c8" class="accordion-collapse collapse" data-bs-parent="#criminalAccordion">
+                <div class="accordion-body">
+                  <p>هو كل فعل يقوم به الإنسان، ويشمل مصطلح السلوك في القانون الجنائي فعل الامتناع لأنه صورة أخرى للفعل لكنها صورة سلبية، ولذلك السلوك الإجرامي (إيجابي، سلبي).</p>
+                  <ul>
+                    <li>السلوك غير المشروع هو محل التجريم والعقاب.</li>
+                    <li>تجريم الحالة الخطرة أو توقع الخطورة الإجرامية لشخص ما هو تجريم مخالف للدستور حيث:
+                      <ul>
+                        <li>لابد من وجود ركن مادي للجريمة فلا يكفي الاشتباه.</li>
+                        <li>لابد أن تكون الأفعال محددة واضحة حتى يتم تجريمها قانوناً.</li>
+                        <li>الاشتهار أي سوء سمعة الشخص لا تكفي لتوقع خطورته الإجرامية فيجب ثبوت إجرامه بدليل قاطع.</li>
+                        <li>الاشتباه لمجرد أن الشخص قد ارتكب جرائم بالماضي ومعاقبته فقط لتوقع خطورته مخالف للدستور ومخالف لقرينة البراءة ومبدأ عدم جواز عقوبة الشخص مرتين عن فعل واحد.</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <h6>أولاً: السلوك الإيجابي</h6>
+                  <p>يتكون من جزئيين: (حركة عضوية، الصفة الإرادية لهذه الحركة).</p>
+                  <ul>
+                    <li>الحركة العضوية تصدر من أي عضو من أعضاء الجسم مثل استخدام اليد في الضغط على زناد المسدس لقتل المجني عليه.</li>
+                    <li>مجرد العزم أو النية في القيام بفعل مجرم لا يحقق السلوك الإيجابي.</li>
+                    <li>يجب أن تكون إرادة الجاني هي التي دفعته للقيام بالحركة العضوية المكونة للسلوك، ورغم أن الإرادة عنصر نفسي فالفقه الجنائي متفق أنها جزء لا يتجزأ من الركن المادي للجريمة.</li>
+                  </ul>
+
+                  <div class="warn-box">
+                    <strong>السلوك المجرد أو الخارج عن الإرادة له صورتين:</strong>
+                    <ul class="mb-0 mt-2">
+                      <li><strong>سلوك صادر من شخص فقد سيطرته على أعضاء جسمه بسبب جنون أو إغماء:</strong> مثل من أصابه إغماء مفاجئ أثناء قيادته السيارة فصدم إنساناً فقتله، هنا تمتنع مسؤوليته الجنائية لعدم وجود الصفة الإرادية، بل إن الواقعة أيضاً تفقد صفة الجريمة وتتحول إلى قوة قاهرة أو حادث مفاجئ.</li>
+                      <li><strong>السلوك الصادر تحت تأثير إكراه مادي مارسه الجاني على شخص آخر:</strong> مثل من أمسك يد شخص وأجبره على طعن إنسان آخر. هنا تكون الجريمة متحققة ولكن يكون مرتكب السلوك مجرد أداة في يد الجاني الحقيقي.</li>
+                    </ul>
+                  </div>
+
+                  <h6>ثانياً: السلوك السلبي (الامتناع)</h6>
+                  <p>هو عنصر من عناصر الركن المادي، ومعناه هو الامتناع عن القيام بفعل إيجابي معين أوجبه القانون.</p>
+                  <p><strong>من شروط السلوك السلبي:</strong></p>
+                  <ul>
+                    <li>وجود إلزام قانوني بفعل معين.</li>
+                    <li>الصفة الإرادية للامتناع.</li>
+                  </ul>
+
+                  <h6>أ) وجود إلزام قانوني بفعل معين</h6>
+                  <p>ليس للامتناع أي قيمة إلا إذا كان الفعل الإيجابي مفروضاً على الشخص الممتنع.</p>
+                  <p><strong>مصدر الواجب القانوني الذي يعاقب صاحبه على الامتناع عنه:</strong></p>
+                  <ul>
+                    <li>نص من نصوص قانون العقوبات.</li>
+                    <li>القوانين المكملة لقانون العقوبات.</li>
+                    <li>نص قانوني مباشر في أي فرع من فروع القانون.</li>
+                    <li>عقد.</li>
+                    <li>المبادئ العامة للقانون.</li>
+                    <li>عمل مادي مثل الفعل الضار.</li>
+                  </ul>
+
+                  <h6>صور الامتناع:</h6>
+                  <ul>
+                    <li><strong>مخالفة واجب قانوني مصدره نص قانوني:</strong> مثل نص المادة 121 التي توجب على القاضي الفصل في الدعاوى المعروضة أمامه (نص قانوني محدد). ونصوص اللوائح الإدارية والتعليمات التنظيمية التي تلزم الموظفين بالقيام بواجباتهم (نص قانوني عام من نصوص القانون). الامتناع في تلك الحالات عن القيام بالواجب القانوني يشكل الركن المادي في الجريمة.</li>
+                    <li><strong>مخالفة واجب قانوني مصدره العقد:</strong> مثل التزام الحارس الشخصي بحماية من تعاقد معه على حمايته أو التزام الممرضة بتقديم العلاج للمرضى.</li>
+                    <li><strong>مخالفة واجب قانوني مصدره المبادئ العامة للقانون:</strong> مثل التزام الأب والأم برعاية أطفالهم، فالنتيجة الخطرة التي تنتج عن امتناعهما يسألان عنها جنائياً.</li>
+                    <li><strong>الفعل الضار كمصدر للواجب القانوني:</strong> "إذا ألقى أحدهم سيجارة مشتعلة أدت إلى اشتعال حريق فهو ملزم بإطفائها وامتناعه يجعله مرتكباً للجريمة". يُفحص ذلك الرأي: لا يمكن أن ننسب له جريمة وضع النار لأنها جريمة عمدية وفي ذلك المثال العمد غير متوافر.</li>
+                  </ul>
+
+                  <div class="warn-box">
+                    <strong>ملاحظات هامة:</strong>
+                    <ul class="mb-0 mt-2">
+                      <li>الامتناع لا يحقق الركن المادي للجريمة إلا إذا كان الفعل محل الامتناع يوجبه القانون.</li>
+                      <li>إذا كان مصدر الواجب هو (الأخلاق) فلا جريمة لمن امتنع عن القيام بواجب أخلاقي مثل امتناع شخص عن إنقاذ غريق.</li>
+                      <li>المادة 377 التي توجب التدخل إذا كانت المساعدة في المستطاع لإنقاذ حالات الغرق والفيضانات والحريق والتلبس بجريمة. الامتناع عن تلك الالتزامات القانونية يشكل مخالفة عقوبتها غرامة حد أقصى 100 جنيه، ولا يتم مساءلة الممتنع عن النتائج الضارة مثل الوفاة أو الأذى البدني التي نتجت عن امتناعه عن المساعدة.</li>
+                    </ul>
+                  </div>
+
+                  <h6>ب) الصفة الإرادية للامتناع</h6>
+                  <p>أي أن يكون في استطاعة الشخص أن يقوم بالفعل ولكنه امتنع بإرادته. إذا كان الممتنع أُجبر على الامتناع لقوة قاهرة أو إكراه مادي في تلك الحالة يفقد الامتناع قيمته كركن مادي، مثل إصابة الجراح بإغماء مفاجئ أثناء إجراءه عملية جراحية خطرة.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTES (الملغي والمقرر) ===== -->
+  <section class="py-5" id="notes">
+    <div class="container">
+      <div class="section-title fade-in-up">
+        <h2><i class="fa-solid fa-clipboard-list me-2" style="color:var(--accent);"></i> الملغي والمقرر</h2>
+        <p>دليل سريع لما هو مطلوب وما هو ملغي في المقررات</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Book 1 -->
+        <div class="col-md-6 fade-in-up">
+          <div class="note-card">
+            <h5><i class="fa-solid fa-book-open"></i> الملغي في الكتاب الأول</h5>
+            <ul>
+              <li>أهمية التقسيم الثلاثي للجرائم <span class="tag-deleted">ملغي</span></li>
+              <li>الأهمية الإجرائية للتقسيم <span class="tag-deleted">ملغي</span></li>
+              <li>إلزامية التحقيق الابتدائي وتعيين مدافع <span class="tag-deleted">ملغي</span></li>
+              <li>الطعن بالمعارضة <span class="tag-deleted">ملغي</span></li>
+              <li>رد الاعتبار <span class="tag-deleted">ملغي</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="col-md-6 fade-in-up">
+          <div class="note-card">
+            <h5><i class="fa-solid fa-book-open"></i> المقرر في الكتاب الثاني</h5>
+            <ul>
+              <li>المسؤولية الجنائية — الأساس الوضعي والقوانين الوضعية <span class="tag-required">مطلوب</span></li>
+              <li>المبحث الرابع: أساس المسؤولية الجنائية في القانون الوضعي <span class="tag-required">مطلوب</span></li>
+              <li>خصائص المسؤولية الجنائية <span class="tag-required">مطلوب</span></li>
+              <li>الأشخاص المعنوية — اتجاه المسؤولية <span class="tag-required">مطلوب</span></li>
+              <li>الموقف التشريعي من المسؤولية الجنائية في الأشخاص المعنوية <span class="tag-required">مطلوب</span></li>
+              <li>شخصية المسؤولية الجنائية في الأشخاص المعنوية <span class="tag-required">مطلوب</span></li>
+              <li>شروط المسؤولية الجنائية: الإدراك والاختيار <span class="tag-required">مطلوب</span></li>
+              <li>عوارض المسؤولية الجنائية <span class="tag-required">مطلوب</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Detailed notes -->
+        <div class="col-md-6 fade-in-up">
+          <div class="note-card">
+            <h5><i class="fa-solid fa-star"></i> ملاحظات هامة على المنهج</h5>
+            <ul>
+              <li><strong>صغر السن:</strong> نلتزم بالشجرة فقط <span class="tag-required">مطلوب</span></li>
+              <li><strong>الاضطراب النفسي والعقلي:</strong> كله مطلوب <span class="tag-required">مطلوب</span></li>
+              <li><strong>الشكر والاختيار:</strong> الوضع في مصر مطلوب — فرنسا ملغي <span class="tag-deleted">فرنسا ملغي</span></li>
+              <li><strong>رأي محكمة النقض المصرية:</strong> مهم جداً — الثلاث حالات <span class="tag-required">مطلوب</span></li>
+              <li><strong>الإكراه وحالة الضرورة:</strong> ثالثاً/ آثار الإكراه المعنوي — لحد هذه الآثار تتمثل فيه <span class="tag-required">مطلوب</span></li>
+              <li><strong>الجزاء الجنائي:</strong> للعقوبات وخصائصها <span class="tag-required">مطلوب</span></li>
+              <li><strong>أنواع العقوبات الأصلية</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>إجراءات الحكم بالإعدام:</strong> الجدل في الجزء الأول غير مطلوب — ثالثاً/ إجراءات تنفيذ <span class="tag-required">مطلوب</span></li>
+              <li><strong>الحكم بالإعدام:</strong> غير مطلوب <span class="tag-deleted">ملغي</span></li>
+              <li><strong>العقوبات السالبة للحرية</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>طبيعة الغرامة:</strong> غير مطلوب <span class="tag-deleted">ملغي</span></li>
+              <li><strong>العقوبات غير الأصلية أو التبعية والتكميلية:</strong> غير مطلوب <span class="tag-deleted">ملغي</span></li>
+              <li><strong>تطبيق العقوبات</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>الظروف المخففة</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>أسباب الإعفاء</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>أسباب تجديد العقوبة "العود":</strong> مطلوب — صور العود غير مطلوب — آثار العود البسيط مطلوب <span class="tag-required">مطلوب</span></li>
+              <li><strong>العود المتكرر:</strong> ملغي <span class="tag-deleted">ملغي</span></li>
+              <li><strong>تعدد الجرائم وأثرها للعقوبات</strong> <span class="tag-required">مطلوب</span></li>
+              <li><strong>الاستثناء:</strong> علينا <span class="tag-required">مطلوب</span></li>
+              <li><strong>حالات مستثناة من حكم الارتباط:</strong> غير مطلوب <span class="tag-deleted">ملغي</span></li>
+              <li><strong>أسباب تعليق تنفيذ العقوبة:</strong> ملغي <span class="tag-deleted">ملغي</span></li>
+              <li><strong>الإفراج الشرطي:</strong> مهم جداً <span class="tag-required">مطلوب</span></li>
+              <li><strong>أسباب انقضاء العقوبات:</strong> قراءة — لحد الآخر الكتاب قراءة <span class="tag-required">قراءة</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exam focus -->
+        <div class="col-md-6 fade-in-up">
+          <div class="note-card">
+            <h5><i class="fa-solid fa-bullseye"></i> تركيز الامتحان — د/ إبراهيم نايل</h5>
+            <p class="fw-bold text-primary">الدكتور شرح 15 موضوعاً، وسيخفّفهم لـ 5 مواضيع بس:</p>
+            <ol>
+              <li>الغرامة والمصادرة</li>
+              <li>العود البسيط والتعدد</li>
+              <li>وقف تنفيذ العقوبة</li>
+              <li>الإفراج الشرطي</li>
+              <li>الدفاع الشرعي</li>
+            </ol>
+            <div class="highlight-box mt-3">
+              <strong>شكل الامتحان:</strong> سؤالان مقالي — تختار سؤالاً واحداً فقط.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE ===== -->
+  <section class="py-5" id="schedule" style="background:#fff;">
+    <div class="container">
+      <div class="section-title fade-in-up">
+        <h2><i class="fa-solid fa-calendar-days me-2" style="color:var(--accent);"></i> جدول الامتحانات</h2>
+        <p>بعد تعديل أ/ شريف</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="timeline fade-in-up">
+
+            <div class="timeline-item">
+              <div class="tl-subject"><i class="fa-solid fa-book me-2" style="color:var(--accent);"></i> تاريخ</div>
+              <div class="tl-date">يوم 27 أو 28 أو 29</div>
+              <span class="tl-gap"><i class="fa-solid fa-arrow-down me-1"></i> بعده بيومين</span>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-subject"><i class="fa-solid fa-gavel me-2" style="color:var(--accent);"></i> جنائي</div>
+              <div class="tl-date">بعد التاريخ بيومين</div>
+              <span class="tl-gap"><i class="fa-solid fa-arrow-down me-1"></i> بعده بأسبوع</span>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-subject"><i class="fa-solid fa-globe me-2" style="color:var(--accent);"></i> دولي</div>
+              <div class="tl-date">بعد الجنائي بأسبوع</div>
+              <span class="tl-gap"><i class="fa-solid fa-arrow-down me-1"></i> بعده بـ 3 أيام</span>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-subject"><i class="fa-solid fa-scale-balanced me-2" style="color:var(--accent);"></i> مدني</div>
+              <div class="tl-date">بعد الدولي بـ 3 أيام</div>
+              <span class="tl-gap"><i class="fa-solid fa-arrow-down me-1"></i> بعده بيومين</span>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-subject"><i class="fa-solid fa-language me-2" style="color:var(--accent);"></i> اللغة</div>
+              <div class="tl-date">بعد المدني بيومين</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam tips -->
+      <div class="row g-4 mt-4 justify-content-center">
+        <div class="col-md-4 fade-in-up">
+          <div class="note-card text-center">
+            <h5><i class="fa-solid fa-pen"></i> القانون الدولي — د/ إبراهيم العناني</h5>
+            <p class="small">المقرر: من صـ 125 → 144</p>
+            <p class="small text-muted">الدكتور عايز الإجابة بالفهم مش الحفظ</p>
+            <div class="highlight-box text-start small">
+              الامتحان مش هيخرج عن الـ 10 أسئلة المحددة.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="note-card text-center">
+            <h5><i class="fa-solid fa-scroll"></i> التاريخ — د/ سليمان هاشم</h5>
+            <p class="small">المقرر: من صـ 97 → نهاية الكتاب</p>
+            <p class="small text-muted">أسئلة العصر الفرعوني والعصر البطلمي</p>
+            <div class="highlight-box text-start small">
+              راجع قائمة الأسئلة المحددة (25 سؤالاً للفرعوني + 9 للبطلمي).
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="note-card text-center">
+            <h5><i class="fa-solid fa-briefcase"></i> القانون التجاري — د/ نهال البنا</h5>
+            <p class="small">قسم العقود التجارية</p>
+            <p class="small text-muted">الامتحان يعتمد على القدرات العقلية والذهنية</p>
+            <div class="highlight-box text-start small">
+              المنهج كله 5 محاضرات — أهمية المحاضرات والكتاب.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section class="py-5" id="videos">
+    <div class="container">
+      <div class="section-title fade-in-up">
+        <h2><i class="fa-brands fa-youtube me-2" style="color:#ff0000;"></i> الفيديوهات التعليمية</h2>
+        <p>روابط مختارة لشرح المواد — كلية وأكاديمية</p>
+      </div>
+
+      <div class="row g-3">
+
+        <!-- Videos from the file -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/wVgRi5QKkoA" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كلية وأكاديمية — فيديو 1</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/V_A6yMbyN7w" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كلية وأكاديمية — فيديو 2</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/AKBhw4XPX30" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كلية وأكاديمية — فيديو 3</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/dQzpd7X84ME" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كلية وأكاديمية — فيديو 4</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/CU9jVPBdhJI" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كلية وأكاديمية — فيديو 5</div>
+          </a>
+        </div>
+
+        <!-- Additional videos -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/MxytpdRDwpo" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">الطابع الشخصي لنظام الحكم — تاريخ قانون</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/EGjtw-_sCtU" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">الحكم الملكي المطلق — تاريخ قانون</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/_tXGdGYKIyk" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">ارتباط القاعدة القانونية بالقاعدة الدينية</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/4z6I14-YWeM" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">مراحل تطور التنظيم القضائي</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/evg-mq6mDJo" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">السمات العامة لإجراءات التقاضي</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/Ql8TJ0X7eyY" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">القضاء في مصر الفرعونية</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/E8ZONP_UNUc" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">الجرائم والعقوبات في مصر الفرعونية</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/4c3HOvkSsB8" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">الزواج في مصر الفرعونية</div>
+          </a>
+        </div>
+
+        <!-- Commercial videos -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/_uKPAdMtdh8" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">أوراق تجارية — 1</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/_6d60ifwff4" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">أوراق تجارية — 2</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/7-rsLrMMjyA" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">أوراق تجارية — 3</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/6rMt_zlmIzE" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كفالة — 1</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/mI1JKhpm1HU" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كفالة — 2</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <a href="https://youtu.be/CfV9H7N1Gio" target="_blank" class="video-card">
+            <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="video-title">كفالة — 3</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5><i class="fa-solid fa-scale-balanced me-2" style="color:var(--accent);"></i> كلية الحقوق</h5>
+          <p class="small">منصة تعليمية شاملة لطلاب كلية الحقوق — جامعة الإسكندرية / عين شمس. ملخصات، جدول امتحانات، روابط فيديوهات، وكل ما تحتاجه لمسيرتك الدراسية.</p>
+          <div class="social mt-3">
+            <a href="#" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="تويتر"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" title="تليجرام"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#divisions">الشعب الدراسية</a></li>
+            <li class="mb-2"><a href="#criminal">القانون الجنائي</a></li>
+            <li class="mb-2"><a href="#notes">الملغي والمقرر</a></li>
+            <li class="mb-2"><a href="#schedule">جدول الامتحانات</a></li>
+            <li class="mb-2"><a href="#videos">الفيديوهات</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>ملاحظة</h5>
+          <p class="small">هذا الموقع تجميعي للاستخدام الشخصي. المحتوى الأكاديمي ملك لأعضاء هيئة التدريس بكلية الحقوق. يُنصح دائماً بالرجوع إلى الكتاب الجامعي والمحاضرات الرسمية.</p>
+          <p class="small mb-0"><i class="fa-solid fa-envelope me-1" style="color:var(--accent);"></i> للتواصل: law.student@example.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2025 كلية الحقوق — جميع الحقوق محفوظة. صُنع بـ <i class="fa-solid fa-heart" style="color:#e74c3c;"></i> للطلاب</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" title="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ===== Back to top =====
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.style.display = 'flex';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ===== Fade-in on scroll =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+    // ===== Active nav link on scroll =====
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('.navbar-custom .nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // ===== Close mobile navbar on click =====
+    document.querySelectorAll('.navbar-custom .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.getElementById('navMenu');
+        if (navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
